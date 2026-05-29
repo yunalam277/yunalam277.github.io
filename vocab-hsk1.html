@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HSK1 词汇 Từ Vựng | Yuna | 学习中文</title>
+
+<title>HSK1 词汇 | Yuna | 学习中文</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -19,81 +20,99 @@ box-sizing:border-box;
 
 body{
 font-family:'Poppins',sans-serif;
-background:#F6F2F3;
+background:#F3EFF1;
 display:flex;
 justify-content:center;
 padding:40px 20px;
 }
 
-.card{
-background:white;
+.container{
+background:#FAFAFA;
+max-width:980px;
 width:100%;
-max-width:850px;
-padding:45px;
-border-radius:30px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+padding:55px;
+border-radius:35px;
+box-shadow:0 8px 24px rgba(0,0,0,.06);
 }
 
 h1{
-font-size:48px;
-color:#26356A;
+font-size:58px;
+color:#26356E;
 text-align:center;
-margin-bottom:10px;
+margin-bottom:12px;
+font-weight:700;
 }
 
-.sub{
+.subtitle{
 text-align:center;
-color:#777;
-font-size:20px;
-margin-bottom:20px;
+font-size:18px;
+color:#7C7C7C;
+margin-bottom:28px;
 }
 
 .divider{
-width:80px;
-height:4px;
-background:#D6A0AE;
-margin:0 auto 35px;
+width:100px;
+height:5px;
+background:#D6A5B3;
 border-radius:20px;
+margin:0 auto 42px;
 }
 
 .lesson{
 display:block;
-background:#F7F3F5;
-padding:28px;
-border-radius:25px;
-margin-bottom:22px;
 text-decoration:none;
-transition:0.25s;
+background:#F0ECEE;
+padding:34px;
+border-radius:28px;
+margin-bottom:28px;
+transition:.25s;
+color:#26356E;
 }
 
 .lesson:hover{
-transform:translateY(-3px);
-box-shadow:0 8px 20px rgba(0,0,0,0.06);
+transform:translateY(-4px);
+box-shadow:0 8px 18px rgba(0,0,0,.08);
 }
 
 .lesson-title{
 font-size:28px;
-font-weight:600;
-color:#26356A;
-margin-bottom:8px;
+font-weight:700;
+margin-bottom:10px;
 }
 
 .lesson-desc{
 font-size:18px;
-color:#777;
+color:#757575;
+line-height:1.7;
 }
 
 .back{
 display:block;
 text-align:center;
-margin-top:35px;
-text-decoration:none;
-color:#999;
+margin-top:25px;
 font-size:18px;
+text-decoration:none;
+color:#9B9B9B;
 }
 
 .back:hover{
-color:#26356A;
+color:#26356E;
+}
+
+@media(max-width:768px){
+
+.container{
+padding:35px 25px;
+}
+
+h1{
+font-size:42px;
+}
+
+.lesson-title{
+font-size:22px;
+}
+
 }
 
 </style>
@@ -101,50 +120,62 @@ color:#26356A;
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<h1>HSK1 Từ Vựng</h1>
+<h1>HSK1 词汇</h1>
 
-<p class="sub">
+<p class="subtitle">
 Mandarin Foundation • Vocabulary Lessons
 </p>
 
 <div class="divider"></div>
 
 <a class="lesson" href="lesson1-greetings.html">
+
 <div class="lesson-title">
 👋 第一课 Lesson 1 – 问候 Greetings
 </div>
+
 <div class="lesson-desc">
 Chào hỏi • 你好 • 谢谢 • 再见
 </div>
+
 </a>
 
-<a class="lesson" href="lesson2-numbers.html>
+<a class="lesson" href="lesson2-numbers.html">
+
 <div class="lesson-title">
 🔢 第二课 Lesson 2 – 数字 Numbers
 </div>
+
 <div class="lesson-desc">
 Số đếm • 一 二 三 • 几 • 多少
 </div>
+
 </a>
 
-<a class="lesson" href="lesson3-family.html>
+<a class="lesson" href="lesson3-family.html">
+
 <div class="lesson-title">
 👨‍👩‍👧 第三课 Lesson 3 – 家人 Family
 </div>
+
 <div class="lesson-desc">
 Gia đình • 妈妈 • 爸爸 • 家
 </div>
+
 </a>
 
-<a class="lesson" href="lesson4-school.html>
+<a class="lesson" href="lesson4-school.html">
+
 <div class="lesson-title">
 🎓 第四课 Lesson 4 – 学校 School
 </div>
+
 <div class="lesson-desc">
 Trường học • 老师 • 学生 • 学校
 </div>
+
 </a>
 
 <a class="back" href="hsk-basic.html">
