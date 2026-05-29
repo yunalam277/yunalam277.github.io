@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BÀI 1 | CHÀO HỎI | Yuna Mandarin</title>
+
+<title>第一课 问候 | Lesson 1 Greetings | Yuna 学习中文</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -19,100 +20,140 @@ box-sizing:border-box;
 
 body{
 font-family:'Poppins',sans-serif;
-background:#F6F2F3;
+background:#F3EFF1;
 display:flex;
 justify-content:center;
 padding:40px 20px;
 }
 
-.card{
-background:white;
+.container{
+background:#FAFAFA;
+max-width:920px;
 width:100%;
-max-width:760px;
-padding:40px;
-border-radius:30px;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
+padding:50px;
+border-radius:35px;
+box-shadow:0 8px 24px rgba(0,0,0,.06);
 }
 
 h1{
-font-size:42px;
-color:#26356A;
+font-size:54px;
+color:#26356E;
 text-align:center;
-margin-bottom:10px;
+margin-bottom:12px;
+font-weight:700;
 }
 
-.sub{
+.subtitle{
 text-align:center;
-color:#777;
-margin-bottom:20px;
-font-size:20px;
+font-size:18px;
+color:#7C7C7C;
+margin-bottom:28px;
 }
 
 .divider{
-width:80px;
-height:4px;
-background:#D6A0AE;
-margin:0 auto 35px;
-border-radius:20px;
+width:90px;
+height:5px;
+background:#D6A5B3;
+border-radius:30px;
+margin:0 auto 40px;
 }
 
-.flashcard{
-background:#F7F3F5;
-padding:28px;
-border-radius:24px;
-margin-bottom:20px;
-transition:0.25s;
-cursor:pointer;
+.word-card{
+background:#F0ECEE;
+padding:34px;
+border-radius:28px;
+margin-bottom:22px;
 }
 
-.flashcard:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 20px rgba(0,0,0,0.06);
+.chinese{
+font-size:56px;
+font-weight:700;
+color:#26356E;
+margin-bottom:10px;
 }
 
-.cn{
-font-size:46px;
-font-weight:600;
-color:#26356A;
-}
-
-.py{
-font-size:22px;
-color:#D28EA0;
-margin-top:10px;
-}
-
-.vi{
+.pinyin{
 font-size:20px;
-color:#555;
-margin-top:8px;
+color:#D38FA1;
+margin-bottom:10px;
+}
+
+.meaning{
+font-size:18px;
+color:#444;
 }
 
 .quiz{
+background:#26356E;
+padding:35px;
+border-radius:30px;
 margin-top:35px;
-background:#26356A;
 color:white;
-padding:25px;
-border-radius:24px;
-line-height:1.8;
 }
 
-.quiz h3{
-margin-bottom:12px;
-font-size:24px;
+.quiz h2{
+margin-bottom:18px;
+font-size:30px;
+}
+
+.question{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.option{
+display:block;
+width:100%;
+padding:16px;
+margin-bottom:14px;
+border:none;
+border-radius:18px;
+font-size:18px;
+font-family:'Poppins',sans-serif;
+cursor:pointer;
+background:white;
+color:#26356E;
+transition:.25s;
+}
+
+.option:hover{
+background:#EDE7EA;
+transform:translateY(-2px);
+}
+
+#result{
+margin-top:18px;
+font-size:22px;
+font-weight:600;
 }
 
 .back{
 display:block;
 text-align:center;
-margin-top:35px;
+margin-top:30px;
 text-decoration:none;
-color:#999;
 font-size:18px;
+color:#9B9B9B;
 }
 
 .back:hover{
-color:#26356A;
+color:#26356E;
+}
+
+@media(max-width:768px){
+
+.container{
+padding:35px 25px;
+}
+
+h1{
+font-size:42px;
+}
+
+.chinese{
+font-size:42px;
+}
+
 }
 
 </style>
@@ -120,66 +161,68 @@ color:#26356A;
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<h1>👋 BÀI 1</h1>
+<h1>第一课 问候</h1>
 
-<p class="sub">
-Greetings • Chào hỏi cơ bản
+<p class="subtitle">
+Lesson 1 • Greetings • Mandarin Foundation
 </p>
 
 <div class="divider"></div>
 
-<div class="flashcard">
-<div class="cn">你好</div>
-<div class="py">nǐ hǎo</div>
-<div class="vi">Xin chào</div>
+<div class="word-card">
+<div class="chinese">你好</div>
+<div class="pinyin">nǐ hǎo</div>
+<div class="meaning">Xin chào</div>
 </div>
 
-<div class="flashcard">
-<div class="cn">谢谢</div>
-<div class="py">xièxie</div>
-<div class="vi">Cảm ơn</div>
+<div class="word-card">
+<div class="chinese">谢谢</div>
+<div class="pinyin">xièxie</div>
+<div class="meaning">Cảm ơn</div>
 </div>
 
-<div class="flashcard">
-<div class="cn">再见</div>
-<div class="py">zàijiàn</div>
-<div class="vi">Tạm biệt</div>
+<div class="word-card">
+<div class="chinese">再见</div>
+<div class="pinyin">zàijiàn</div>
+<div class="meaning">Tạm biệt</div>
 </div>
 
-<div class="flashcard">
-<div class="cn">请</div>
-<div class="py">qǐng</div>
-<div class="vi">Làm ơn / Mời</div>
+<div class="word-card">
+<div class="chinese">不客气</div>
+<div class="pinyin">bú kèqi</div>
+<div class="meaning">Không có gì</div>
 </div>
 
-<div class="flashcard">
-<div class="cn">对不起</div>
-<div class="py">duìbuqǐ</div>
-<div class="vi">Xin lỗi</div>
-</div>
-
-<div class="flashcard">
-<div class="cn">不客气</div>
-<div class="py">bú kèqi</div>
-<div class="vi">Không có gì</div>
-</div>
-
-<div class="flashcard">
-<div class="cn">没关系</div>
-<div class="py">méi guānxi</div>
-<div class="vi">Không sao / Không vấn đề gì</div>
+<div class="word-card">
+<div class="chinese">没关系</div>
+<div class="pinyin">méi guānxi</div>
+<div class="meaning">Không sao / Không vấn đề gì</div>
 </div>
 
 <div class="quiz">
-<h3>Mini Quiz ✏️</h3>
 
-<p>“谢谢” nghĩa là gì?</p>
+<h2>Mini Quiz ✏️</h2>
 
-<p>A. Xin lỗi</p>
-<p><b>B. Cảm ơn ✅</b></p>
-<p>C. Tạm biệt</p>
+<p class="question">
+“谢谢” nghĩa là gì?
+</p>
+
+<button class="option" onclick="checkAnswer(false)">
+A. Xin lỗi
+</button>
+
+<button class="option" onclick="checkAnswer(true)">
+B. Cảm ơn
+</button>
+
+<button class="option" onclick="checkAnswer(false)">
+C. Tạm biệt
+</button>
+
+<p id="result"></p>
+
 </div>
 
 <a class="back" href="vocab-hsk1.html">
@@ -187,6 +230,25 @@ Greetings • Chào hỏi cơ bản
 </a>
 
 </div>
+
+<script>
+
+function checkAnswer(correct){
+
+const result=document.getElementById("result");
+
+if(correct){
+result.innerHTML="✅ Chính xác!";
+result.style.color="#7CFF92";
+}
+else{
+result.innerHTML="❌ Thử lại nhé!";
+result.style.color="#FF8F8F";
+}
+
+}
+
+</script>
 
 </body>
 </html>
