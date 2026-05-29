@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>第六课 时间 | Lesson 6 Time | Yuna 学习中文</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#F3EFF1;
+display:flex;
+justify-content:center;
+padding:40px 20px;
+}
+
+.container{
+background:#FAFAFA;
+max-width:920px;
+width:100%;
+padding:50px;
+border-radius:35px;
+box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+h1{
+font-size:54px;
+color:#26356E;
+text-align:center;
+margin-bottom:12px;
+font-weight:700;
+}
+
+.subtitle{
+text-align:center;
+font-size:18px;
+color:#7C7C7C;
+margin-bottom:28px;
+}
+
+.divider{
+width:90px;
+height:5px;
+background:#D6A5B3;
+border-radius:30px;
+margin:0 auto 40px;
+}
+
+.word-card{
+background:#F0ECEE;
+padding:34px;
+border-radius:28px;
+margin-bottom:22px;
+}
+
+.chinese{
+font-size:56px;
+font-weight:700;
+color:#26356E;
+margin-bottom:10px;
+}
+
+.pinyin{
+font-size:20px;
+color:#D38FA1;
+margin-bottom:10px;
+}
+
+.meaning{
+font-size:18px;
+color:#444;
+}
+
+.quiz{
+background:#26356E;
+padding:35px;
+border-radius:30px;
+margin-top:35px;
+color:white;
+}
+
+.quiz h2{
+margin-bottom:18px;
+font-size:30px;
+}
+
+.question{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.option{
+display:block;
+width:100%;
+padding:16px;
+margin-bottom:14px;
+border:none;
+border-radius:18px;
+font-size:18px;
+font-family:'Poppins',sans-serif;
+cursor:pointer;
+background:white;
+color:#26356E;
+transition:.25s;
+}
+
+.option:hover{
+background:#EDE7EA;
+transform:translateY(-2px);
+}
+
+#result{
+margin-top:18px;
+font-size:22px;
+font-weight:600;
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:30px;
+text-decoration:none;
+font-size:18px;
+color:#9B9B9B;
+}
+
+.back:hover{
+color:#26356E;
+}
+
+@media(max-width:768px){
+
+.container{
+padding:35px 25px;
+}
+
+h1{
+font-size:42px;
+}
+
+.chinese{
+font-size:42px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>第六课 时间</h1>
+
+<p class="subtitle">
+Lesson 6 • Time & Date • Mandarin Foundation
+</p>
+
+<div class="divider"></div>
+
+<div class="word-card">
+<div class="chinese">今天</div>
+<div class="pinyin">jīntiān</div>
+</div>
+
+<div class="word-card">
+<div class="chinese">明天</div>
+<div class="pinyin">míngtiān</div>
+</div>
+
+<div class="word-card">
+<div class="chinese">月</div>
+<div class="pinyin">yuè</div>
+</div>
+
+<div class="word-card">
+<div class="chinese">号</div>
+<div class="pinyin">hào</div>
+</div>
+
+<div class="word-card">
+<div class="chinese">点</div>
+<div class="pinyin">diǎn</div>
+</div>
+
+<div class="quiz">
+
+<h2>Mini Quiz ⏰</h2>
+
+<p class="question">
+“今天” nghĩa là gì?
+</p>
+
+<button class="option" onclick="checkAnswer(true)">
+A. Hôm nay
+</button>
+
+<button class="option" onclick="checkAnswer(false)">
+B. Ngày mai
+</button>
+
+<button class="option" onclick="checkAnswer(false)">
+C. Tháng
+</button>
+
+<p id="result"></p>
+
+</div>
+
+<a class="back" href="vocab-hsk1.html">
+← Quay lại HSK1 Vocabulary
+</a>
+
+</div>
+
+<script>
+
+function checkAnswer(correct){
+
+const result=document.getElementById("result");
+
+if(correct){
+result.innerHTML="✅ Chính xác!";
+result.style.color="#7CFF92";
+}
+else{
+result.innerHTML="❌ Thử lại nhé!";
+result.style.color="#FF8F8F";
+}
+
+}
+
+</script>
+
+</body>
+</html>
