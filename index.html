@@ -1,43 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yuna Mandarin</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-background:#FFF7F6;
-font-family:Arial;
+font-family:'Poppins',sans-serif;
+background:#F6F3F2;
 display:flex;
 justify-content:center;
-padding:30px;
+padding:50px 20px;
+color:#2b2b2b;
 }
 
 .card{
-background:white;
-padding:30px;
-border-radius:25px;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-max-width:420px;
 width:100%;
+max-width:460px;
+background:white;
+border-radius:30px;
+padding:40px 35px;
+box-shadow:0 18px 45px rgba(0,0,0,0.08);
 text-align:center;
 }
 
+.logo{
+font-size:42px;
+margin-bottom:12px;
+}
+
 h1{
-color:#ff5aa5;
+font-size:34px;
+font-weight:600;
+color:#2f3556;
+margin-bottom:8px;
+}
+
+.subtitle{
+font-size:15px;
+color:#7a7a7a;
+margin-bottom:35px;
+}
+
+.divider{
+width:60px;
+height:4px;
+background:#D8A7B1;
+margin:0 auto 30px;
+border-radius:50px;
 }
 
 .btn{
 display:block;
-background:#ff69b4;
-color:white;
-padding:15px;
-margin:12px 0;
-border-radius:15px;
+width:100%;
+padding:17px;
+margin:14px 0;
+border-radius:18px;
 text-decoration:none;
-font-weight:bold;
+font-size:16px;
+font-weight:500;
+transition:0.25s;
 }
+
+.primary{
+background:#2F3556;
+color:white;
+}
+
+.secondary{
+background:#F3EDF0;
+color:#2F3556;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.footer{
+margin-top:35px;
+font-size:13px;
+color:#999;
+}
+
 </style>
 </head>
 
@@ -45,25 +101,35 @@ font-weight:bold;
 
 <div class="card">
 
-<h1>🌸 Yuna Mandarin</h1>
+<div class="logo">✿</div>
 
-<p>Chinese • HSK • Study Life</p>
+<h1>Yuna Mandarin</h1>
 
-<a class="btn" href="#">
-HSK1
+<p class="subtitle">
+Chinese Education • HSK • Study Life
+</p>
+
+<div class="divider"></div>
+
+<a class="btn primary" href="#">
+HSK Foundation
 </a>
 
-<a class="btn" href="#">
-HSK4
+<a class="btn secondary" href="#">
+HSK Intermediate
 </a>
 
-<a class="btn" href="#">
-PDF Tài liệu
+<a class="btn secondary" href="#">
+Learning Materials
 </a>
 
-<a class="btn" href="#">
-Zalo hỗ trợ
+<a class="btn primary" href="#">
+Contact & Support
 </a>
+
+<div class="footer">
+Mandarin Learning Space by Yuna
+</div>
 
 </div>
 
