@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Từ Vựng HSK1 | Yuna Mandarin</title>
+<title>HSK1 Từ Vựng | Yuna | 学习中文</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,14 +28,14 @@ padding:40px 20px;
 .card{
 background:white;
 width:100%;
-max-width:760px;
-padding:40px;
+max-width:850px;
+padding:45px;
 border-radius:30px;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 h1{
-font-size:42px;
+font-size:48px;
 color:#26356A;
 text-align:center;
 margin-bottom:10px;
@@ -44,37 +44,56 @@ margin-bottom:10px;
 .sub{
 text-align:center;
 color:#777;
-margin-bottom:30px;
+font-size:20px;
+margin-bottom:20px;
 }
 
-.word{
-background:#F7F3F5;
-padding:20px;
+.divider{
+width:80px;
+height:4px;
+background:#D6A0AE;
+margin:0 auto 35px;
 border-radius:20px;
-margin-bottom:18px;
 }
 
-.cn{
-font-size:34px;
+.lesson{
+display:block;
+background:#F7F3F5;
+padding:28px;
+border-radius:25px;
+margin-bottom:22px;
+text-decoration:none;
+transition:0.25s;
+}
+
+.lesson:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+.lesson-title{
+font-size:28px;
 font-weight:600;
 color:#26356A;
+margin-bottom:8px;
 }
 
-.py{
-color:#C98FA0;
-margin:6px 0;
-}
-
-.vi{
-color:#555;
+.lesson-desc{
+font-size:18px;
+color:#777;
 }
 
 .back{
 display:block;
-margin-top:25px;
 text-align:center;
+margin-top:35px;
 text-decoration:none;
 color:#999;
+font-size:18px;
+}
+
+.back:hover{
+color:#26356A;
 }
 
 </style>
@@ -85,31 +104,48 @@ color:#999;
 <div class="card">
 
 <h1>HSK1 Từ Vựng</h1>
-<p class="sub">Lesson 1 • Mandarin Foundation</p>
 
-<div class="word">
-<div class="cn">你好</div>
-<div class="py">nǐ hǎo</div>
-<div class="vi">Xin chào</div>
-</div>
+<p class="sub">
+Mandarin Foundation • Vocabulary Lessons
+</p>
 
-<div class="word">
-<div class="cn">谢谢</div>
-<div class="py">xièxie</div>
-<div class="vi">Cảm ơn</div>
-</div>
+<div class="divider"></div>
 
-<div class="word">
-<div class="cn">老师</div>
-<div class="py">lǎoshī</div>
-<div class="vi">Giáo viên</div>
+<a class="lesson" href="lesson1-greetings.html">
+<div class="lesson-title">
+👋 Lesson 1 – Greetings
 </div>
+<div class="lesson-desc">
+Chào hỏi • 你好 • 谢谢 • 再见
+</div>
+</a>
 
-<div class="word">
-<div class="cn">学生</div>
-<div class="py">xuésheng</div>
-<div class="vi">Học sinh</div>
+<a class="lesson" href="#">
+<div class="lesson-title">
+🔢 Lesson 2 – Numbers
 </div>
+<div class="lesson-desc">
+Số đếm • 一 二 三 • 几 • 多少
+</div>
+</a>
+
+<a class="lesson" href="#">
+<div class="lesson-title">
+👨‍👩‍👧 Lesson 3 – Family
+</div>
+<div class="lesson-desc">
+Gia đình • 妈妈 • 爸爸 • 家
+</div>
+</a>
+
+<a class="lesson" href="#">
+<div class="lesson-title">
+🎓 Lesson 4 – School
+</div>
+<div class="lesson-desc">
+Trường học • 老师 • 学生 • 学校
+</div>
+</a>
 
 <a class="back" href="hsk-basic.html">
 ← Quay lại HSK Cơ Bản
